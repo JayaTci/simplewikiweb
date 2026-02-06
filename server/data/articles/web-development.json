@@ -1,0 +1,13 @@
+{
+  "id": "web-development",
+  "slug": "web-development",
+  "title": "Web Development",
+  "subtitle": "The art of building websites and web applications",
+  "content": "## Overview\n\n**Web development** is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.\n\nWeb development typically refers to the non-design aspects of building websites: writing markup and coding. It includes client-side coding, server-side coding, and database technology.\n\n## Frontend Development\n\nFrontend development focuses on what users see and interact with in their browser. Key technologies include:\n\n- **HTML** — The structure of web pages\n- **CSS** — The styling and layout of web pages\n- **[[JavaScript]]** — The behavior and interactivity of web pages\n- **[[React]]** — A popular library for building user interfaces\n- **[[TypeScript]]** — A typed superset of JavaScript for larger projects\n\n## Backend Development\n\nBackend development handles the server-side logic, databases, and APIs that power web applications:\n\n- **[[Node.js]]** — JavaScript runtime for server-side programming\n- **[[Express]]** — Web framework for building APIs and web servers\n- **[[REST API]]** — Architectural style for designing web services\n- **Databases** — Storage systems like PostgreSQL, MongoDB, MySQL\n\n## Full-Stack Development\n\nFull-stack developers work with both frontend and backend technologies. A common modern stack includes:\n\n- **Frontend**: [[React]] with [[TypeScript]]\n- **Backend**: [[Node.js]] with [[Express]]\n- **Database**: PostgreSQL or MongoDB\n- **API**: [[REST API]] or GraphQL\n\n## Modern Web Development Practices\n\n### Version Control\nGit is the standard version control system used by nearly all web developers. GitHub, GitLab, and Bitbucket provide hosting for Git repositories.\n\n### Package Management\nnpm (Node Package Manager) is the largest software registry in the world, with over 1.3 million packages available for [[JavaScript]] and [[Node.js]] projects.\n\n### Responsive Design\nModern websites must work across devices of all sizes. CSS media queries, flexible grids, and frameworks help create responsive layouts.\n\n### Performance Optimization\nWeb performance is critical for user experience. Techniques include code splitting, lazy loading, caching, and image optimization.",
+  "categories": ["Web Development", "General"],
+  "relatedArticles": ["javascript", "react", "nodejs", "express"],
+  "metadata": {
+    "created": "2026-01-05T12:00:00Z",
+    "lastModified": "2026-01-30T16:20:00Z"
+  }
+}

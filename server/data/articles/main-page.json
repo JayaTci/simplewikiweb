@@ -1,0 +1,13 @@
+{
+  "id": "main-page",
+  "slug": "main-page",
+  "title": "Welcome to WikiClone",
+  "subtitle": "A free encyclopedia built with React and Node.js",
+  "content": "## Welcome to WikiClone\n\nWikiClone is a free, open-source encyclopedia that anyone can explore. This project is built with modern web technologies and serves as a demonstration of full-stack web development.\n\n## Featured Articles\n\nExplore our collection of articles on programming and web development:\n\n- **[[React]]** — A JavaScript library for building user interfaces\n- **[[Node.js]]** — A JavaScript runtime built on Chrome's V8 engine\n- **[[JavaScript]]** — The programming language of the web\n- **[[Web Development]]** — The art of building websites and web applications\n- **[[TypeScript]]** — A typed superset of JavaScript\n- **[[Express]]** — A fast, minimalist web framework for Node.js\n- **[[REST API]]** — An architectural style for building web services\n\n## About This Project\n\nThis Wikipedia-like website was built using:\n\n- **Frontend**: [[React]] with Vite for fast development\n- **Backend**: [[Node.js]] with [[Express]] for the API server\n- **Data Storage**: JSON files for article content\n- **Styling**: Custom CSS inspired by Wikipedia's design\n\n## How to Navigate\n\nUse the **search bar** at the top to find articles, browse **categories** in the sidebar, or click the **Random Article** button to discover something new.",
+  "categories": ["General"],
+  "relatedArticles": ["react", "nodejs", "javascript"],
+  "metadata": {
+    "created": "2026-01-01T00:00:00Z",
+    "lastModified": "2026-02-06T00:00:00Z"
+  }
+}

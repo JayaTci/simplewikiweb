@@ -1,0 +1,13 @@
+{
+  "id": "express",
+  "slug": "express",
+  "title": "Express",
+  "subtitle": "A fast, minimalist web framework for Node.js",
+  "content": "## Overview\n\n**Express.js**, or simply **Express**, is a back-end web application framework for building [[REST API]]s with [[Node.js]]. It has been called the de facto standard server framework for Node.js. It is designed for building web applications and APIs and is the backend component of popular development stacks like the MEAN, MERN, and MEVN stacks.\n\n## History\n\nExpress was created by TJ Holowaychuk and first released in 2010. It was inspired by the Sinatra framework for Ruby. In June 2014, the rights to manage the project were acquired by StrongLoop, which was later acquired by IBM in September 2015. The project is now maintained by the Node.js Foundation.\n\n## Key Features\n\n### Routing\n\nExpress provides a robust routing mechanism. Routes are defined using HTTP methods and URL patterns:\n\n```\napp.get('/api/users', (req, res) => {\n  res.json({ users: [] });\n});\n\napp.post('/api/users', (req, res) => {\n  // Create a new user\n});\n```\n\n### Middleware\n\nMiddleware functions have access to the request object, the response object, and the next middleware function. They can execute code, modify request/response objects, end the request-response cycle, or call the next middleware.\n\n```\napp.use((req, res, next) => {\n  console.log(`${req.method} ${req.url}`);\n  next();\n});\n```\n\n### Template Engines\n\nExpress supports various template engines like Pug, EJS, and Handlebars for server-side rendering of HTML pages.\n\n### Static Files\n\nExpress can serve static files (images, CSS, [[JavaScript]]) using the built-in `express.static` middleware.\n\n## Getting Started\n\n```\n# Create a new project\nmkdir my-api && cd my-api\nnpm init -y\nnpm install express\n```\n\nCreate a basic server:\n\n```\nconst express = require('express');\nconst app = express();\n\napp.get('/', (req, res) => {\n  res.send('Hello World!');\n});\n\napp.listen(3000, () => {\n  console.log('Server running on port 3000');\n});\n```\n\n## Related Technologies\n\n- **[[Node.js]]** — The runtime Express is built on\n- **[[REST API]]** — The architecture Express is commonly used to implement\n- **[[React]]** — Frontend library often served by Express backends\n- **[[Web Development]]** — Express is a core backend tool in web dev",
+  "categories": ["JavaScript", "Backend", "Web Development"],
+  "relatedArticles": ["nodejs", "rest-api", "react", "javascript"],
+  "metadata": {
+    "created": "2026-01-15T14:00:00Z",
+    "lastModified": "2026-01-29T10:30:00Z"
+  }
+}
