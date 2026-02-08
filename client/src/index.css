@@ -1,10 +1,23 @@
-/* Global Styles - Wikipedia-inspired theme */
+/*
+ * index.css — Global Styles & Design Tokens
+ *
+ * Defines CSS custom properties (light + dark theme), base typography,
+ * element resets, and shared utility styles (loading spinner, error page).
+ * This file is imported once in main.jsx and applies site-wide.
+ */
+
+/* ============================
+   Reset & Box Sizing
+   ============================ */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* ============================
+   Light Theme (default)
+   ============================ */
 :root {
   --color-bg: #ffffff;
   --color-text: #202122;
@@ -33,6 +46,9 @@
   --max-content-width: 960px;
 }
 
+/* ============================
+   Dark Theme
+   ============================ */
 [data-theme="dark"] {
   --color-bg: #1a1a2e;
   --color-text: #e0e0e0;
@@ -53,6 +69,9 @@
   --color-accent-hover: #7aa5e0;
 }
 
+/* ============================
+   Base Element Styles
+   ============================ */
 body {
   margin: 0;
   padding: 0;
@@ -128,7 +147,9 @@ img {
   height: auto;
 }
 
-/* Loading spinner */
+/* ============================
+   Loading Spinner
+   ============================ */
 .loading {
   display: flex;
   flex-direction: column;
@@ -152,7 +173,9 @@ img {
   to { transform: rotate(360deg); }
 }
 
-/* Error page */
+/* ============================
+   Error / 404 Page
+   ============================ */
 .error-page {
   text-align: center;
   padding: 60px 20px;

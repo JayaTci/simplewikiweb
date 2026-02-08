@@ -1,3 +1,11 @@
+/**
+ * Sidebar — Collapsible Navigation Panel
+ *
+ * Shows quick-access links (Main Page, Random Article, Search)
+ * and a dynamic list of article categories fetched from the API.
+ * On mobile the sidebar slides in/out; on desktop it's always visible.
+ */
+
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
@@ -7,6 +15,7 @@ function Sidebar({ isOpen }) {
   const [categories, setCategories] = useState([]);
   const navigate = useNavigate();
 
+  // Fetch category names once on mount
   useEffect(() => {
     api.getCategories().then((data) => {
       if (data.success) {
@@ -15,6 +24,7 @@ function Sidebar({ isOpen }) {
     }).catch(() => {});
   }, []);
 
+  /** Navigate to a randomly selected article. */
   const handleRandom = async () => {
     try {
       const data = await api.getRandomArticle();

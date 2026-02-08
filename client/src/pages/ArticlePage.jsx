@@ -1,3 +1,15 @@
+/**
+ * ArticlePage — Single Article View
+ *
+ * Fetches an article by its URL slug, then renders:
+ *   - Title, subtitle, category tags, and last-modified date
+ *   - Auto-generated table of contents from h2/h3 headings
+ *   - Full markdown body (with wiki-link support)
+ *   - Related article links
+ *
+ * Shows a 404 message if the slug doesn't match any article.
+ */
+
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../services/api';
@@ -12,6 +24,7 @@ function ArticlePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Re-fetch whenever the slug changes (e.g. navigating between articles)
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -43,6 +56,7 @@ function ArticlePage() {
 
   return (
     <div className="article-page">
+      {/* Article header: title, subtitle, categories, date */}
       <div className="article-header">
         <h1 className="article-title">{article.title}</h1>
         {article.subtitle && (
@@ -60,9 +74,11 @@ function ArticlePage() {
         </div>
       </div>
 
+      {/* Auto-generated table of contents and rendered markdown body */}
       <TableOfContents headings={headings} />
       <ArticleContent content={article.content} />
 
+      {/* Related articles section */}
       {article.relatedArticles && article.relatedArticles.length > 0 && (
         <div className="related-articles">
           <h2>Related Articles</h2>

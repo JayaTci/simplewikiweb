@@ -1,3 +1,10 @@
+/**
+ * NotFoundPage — 404 Error View
+ *
+ * Displayed for any route that doesn't match a defined path.
+ * Provides a link back to the main page.
+ */
+
 import { Link } from 'react-router-dom';
 
 function NotFoundPage() {

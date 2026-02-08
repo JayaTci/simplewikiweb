@@ -1,3 +1,11 @@
+/*
+ * Layout.css — Shell Component Styles
+ *
+ * Styles for the persistent page shell: header (fixed top bar with
+ * logo, search, theme toggle), sidebar (collapsible navigation),
+ * main content area, and footer. Includes mobile responsive rules.
+ */
+
 /* ============================
    Layout
    ============================ */

@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "DevWiki Express REST API — serves article data and search from JSON files.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",

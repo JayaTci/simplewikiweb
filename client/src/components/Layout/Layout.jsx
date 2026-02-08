@@ -1,3 +1,11 @@
+/**
+ * Layout — Page Shell Component
+ *
+ * Wraps every page with the shared Header, Sidebar, and Footer.
+ * Manages sidebar open/close state and the light/dark theme toggle.
+ * Theme preference is persisted in localStorage.
+ */
+
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
@@ -9,6 +17,7 @@ function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
 
+  // Sync the theme to the <html> data attribute and persist to localStorage
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem('theme', theme);

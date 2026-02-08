@@ -1,3 +1,9 @@
+/**
+ * Footer — Site-Wide Footer
+ *
+ * Displays project branding and a brief description.
+ */
+
 import './Layout.css';
 
 function Footer() {

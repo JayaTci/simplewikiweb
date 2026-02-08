@@ -1,7 +1,14 @@
+/**
+ * Vite Configuration
+ *
+ * - React plugin for JSX/Fast Refresh support.
+ * - Dev server runs on port 5173 and proxies /api requests
+ *   to the Express backend at localhost:5000.
+ */
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {

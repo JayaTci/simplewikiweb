@@ -1,3 +1,11 @@
+/**
+ * SearchPage — Full-Text Search Interface
+ *
+ * Reads the "q" query parameter from the URL, calls the search API,
+ * and displays a list of matching articles (title, subtitle, excerpt).
+ * If no query is provided, shows an empty state prompt.
+ */
+
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import api from '../services/api';
@@ -11,6 +19,7 @@ function SearchPage() {
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
 
+  // Trigger a search whenever the query param changes
   useEffect(() => {
     if (query) {
       setLoading(true);
@@ -38,6 +47,7 @@ function SearchPage() {
 
       {loading && <Loading />}
 
+      {/* Search results */}
       {!loading && searched && (
         <div className="search-results">
           <p className="search-results-count">
@@ -64,6 +74,7 @@ function SearchPage() {
         </div>
       )}
 
+      {/* Empty state — no query provided yet */}
       {!loading && !searched && (
         <p className="search-hint">Enter a search term to find articles.</p>
       )}

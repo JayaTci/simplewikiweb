@@ -1,3 +1,16 @@
+/**
+ * App — Root Component & Router Configuration
+ *
+ * Sets up client-side routing with React Router.
+ * All pages render inside the shared Layout (header, sidebar, footer).
+ *
+ * Routes:
+ *   /                  → HomePage    (article index)
+ *   /article/:slug     → ArticlePage (single article view)
+ *   /search            → SearchPage  (full-text search)
+ *   *                  → NotFoundPage (404 fallback)
+ */
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage';

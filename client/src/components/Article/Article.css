@@ -1,3 +1,10 @@
+/*
+ * Article.css — Article Component Styles
+ *
+ * Styles for rendered markdown article content (headings, paragraphs,
+ * code blocks, lists) and the auto-generated table of contents panel.
+ */
+
 /* ============================
    Article Content
    ============================ */

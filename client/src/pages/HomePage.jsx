@@ -1,3 +1,10 @@
+/**
+ * HomePage — Landing / Article Index
+ *
+ * Displays a welcome banner and a responsive grid of all article cards.
+ * Each card shows the title, subtitle, excerpt, and up to 3 category tags.
+ */
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../services/api';
@@ -7,6 +14,7 @@ function HomePage() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Fetch every article's metadata on mount
   useEffect(() => {
     api.getAllArticles()
       .then((data) => {

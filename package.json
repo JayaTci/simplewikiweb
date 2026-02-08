@@ -1,6 +1,7 @@
 {
   "name": "devwiki",
   "version": "1.0.0",
+  "description": "A Wikipedia-inspired developer encyclopedia built with React and Node.js/Express.",
   "private": true,
   "scripts": {
     "install:all": "npm install && cd client && npm install && cd ../server && npm install",

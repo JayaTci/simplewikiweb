@@ -1,3 +1,11 @@
+/**
+ * Header — Fixed Top Navigation Bar
+ *
+ * Contains the DevWiki logo/link, a dark-mode toggle button,
+ * the mobile sidebar hamburger, and an inline search form
+ * that navigates to the /search page on submit.
+ */
+
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Layout.css';
@@ -6,6 +14,7 @@ function Header({ onToggleSidebar, theme, onToggleTheme }) {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
+  /** Navigate to the search page with the current query string. */
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {

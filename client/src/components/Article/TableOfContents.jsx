@@ -1,8 +1,17 @@
+/**
+ * TableOfContents — Auto-Generated TOC
+ *
+ * Renders a clickable list of headings (h2/h3) extracted from the
+ * article's markdown content. Clicking an entry smooth-scrolls to
+ * the corresponding section.
+ */
+
 import './Article.css';
 
 function TableOfContents({ headings }) {
   if (!headings || headings.length === 0) return null;
 
+  /** Smooth-scroll to the heading element by its id. */
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) {
