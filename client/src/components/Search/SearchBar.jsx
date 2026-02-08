@@ -17,7 +17,7 @@ function SearchBar({ initialQuery = '', large = false }) {
     <form className={`search-form ${large ? 'search-form-large' : ''}`} onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Search WikiClone..."
+        placeholder="Search DevWiki..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="search-form-input"

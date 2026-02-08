@@ -23,7 +23,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <div className="welcome-banner">
-        <h1>Welcome to <span className="brand">WikiClone</span></h1>
+        <h1>Welcome to <span className="brand">DevWiki</span></h1>
         <p className="welcome-sub">The free encyclopedia built with React and Node.js</p>
         <p className="welcome-count">{articles.length} articles and growing</p>
       </div>

@@ -20,8 +20,8 @@ function Header({ onToggleSidebar, theme, onToggleTheme }) {
           &#9776;
         </button>
         <Link to="/" className="header-logo">
-          <span className="logo-icon">W</span>
-          <span className="logo-text">WikiClone</span>
+          <span className="logo-icon">D</span>
+          <span className="logo-text">DevWiki</span>
         </Link>
       </div>
       <div className="header-right">

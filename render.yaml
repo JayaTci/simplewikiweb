@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: wikipedia-clone
+    name: devwiki
     runtime: node
     buildCommand: npm install && npm run build
     startCommand: npm run start
